@@ -42,7 +42,7 @@ export const HeroSection = () => {
               onClick={() => scrollToSection('programs')}
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-volleyball-navy px-8 py-4 text-lg font-semibold rounded-full transition-all duration-200"
+              className="border-2 border-white text-volleyball-blue hover:bg-white hover:text-volleyball-navy px-8 py-4 text-lg font-semibold rounded-full transition-all duration-200"
             >
               View Programs
             </Button>
