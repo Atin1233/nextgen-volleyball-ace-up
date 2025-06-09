@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -7,9 +6,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 export const BookingSection = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     parentName: '',
     email: '',
@@ -35,26 +36,52 @@ export const BookingSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Booking request submitted:', formData);
-    toast({
-      title: "Booking Request Submitted!",
-      description: "We'll contact you within 24 hours to confirm your session.",
-    });
-    
-    // Reset form
-    setFormData({
-      parentName: '',
-      email: '',
-      phone: '',
-      childName: '',
-      childAge: '',
-      sessionType: '',
-      preferredDays: [],
-      preferredTime: '',
-      notes: ''
-    });
+    setIsSubmitting(true);
+
+    try {
+      console.log('Submitting booking request:', formData);
+
+      // Call the Supabase Edge Function
+      const { data, error } = await supabase.functions.invoke('submit-booking', {
+        body: formData
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      console.log('Booking submission result:', data);
+
+      toast({
+        title: "Booking Request Submitted!",
+        description: "We'll contact you within 24 hours to confirm your session.",
+      });
+      
+      // Reset form
+      setFormData({
+        parentName: '',
+        email: '',
+        phone: '',
+        childName: '',
+        childAge: '',
+        sessionType: '',
+        preferredDays: [],
+        preferredTime: '',
+        notes: ''
+      });
+
+    } catch (error) {
+      console.error('Error submitting booking:', error);
+      toast({
+        title: "Submission Error",
+        description: "There was a problem submitting your booking. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -229,9 +256,10 @@ export const BookingSection = () => {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-volleyball-orange hover:bg-volleyball-orange-dark text-white font-semibold py-4 text-lg transition-all duration-200 hover:scale-[1.02]"
+                disabled={isSubmitting}
+                className="w-full bg-volleyball-orange hover:bg-volleyball-orange-dark text-white font-semibold py-4 text-lg transition-all duration-200 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Submit Booking Request
+                {isSubmitting ? 'Submitting...' : 'Submit Booking Request'}
               </Button>
             </form>
           </CardContent>
