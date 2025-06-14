@@ -8,7 +8,7 @@ export const CoachesSection = () => {
             🏐 Meet Your Coaches
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Passionate athletes dedicated to developing the next generation of volleyball players
+            High performing varsity players dedicated to developing the next generation of volleyball players
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export const CoachesSection = () => {
               />
             </div>
             <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Coach Manav</h3>
-            <div className="text-volleyball-orange font-semibold mb-4">5+ years playing experience</div>
+            <div className="text-volleyball-orange font-semibold mb-4">High performing varsity player • 5+ years playing experience</div>
             <p className="text-gray-600 leading-relaxed">
               Specializes in fundamental skill development and making volleyball fun for beginners. 
               Manav's patient approach helps young players build confidence while mastering the basics.
@@ -39,13 +39,13 @@ export const CoachesSection = () => {
           <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
             <div className="w-32 h-32 bg-volleyball-blue rounded-full mx-auto mb-6 overflow-hidden">
               <img 
-                src="/lovable-uploads/3d4c260d-0363-400d-b6d7-c09e87af22a9.png" 
+                src="/lovable-uploads/3d4c260d-0363400d-b6d7-c09e87af22a9.png" 
                 alt="Coach Akul"
                 className="w-full h-full object-cover"
               />
             </div>
             <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Coach Akul</h3>
-            <div className="text-volleyball-blue font-semibold mb-4">4+ years playing experience</div>
+            <div className="text-volleyball-blue font-semibold mb-4">High performing varsity player • 4+ years playing experience</div>
             <p className="text-gray-600 leading-relaxed">
               Focuses on technique refinement and building confidence in young players. 
               Akul's technical expertise helps players develop proper form and advanced skills.

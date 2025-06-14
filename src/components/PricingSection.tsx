@@ -28,7 +28,7 @@ export const PricingSection = () => {
             </div>
             
             <h3 className="font-poppins font-bold text-2xl mb-2">Group Clinics</h3>
-            <p className="text-orange-100 mb-6">Weekly 60-minute group sessions</p>
+            <p className="text-orange-100 mb-6">Weekly 90-minute group sessions</p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center justify-between">
@@ -79,12 +79,12 @@ export const PricingSection = () => {
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center justify-between">
-                <span className="text-blue-100">45-minute session</span>
+                <span className="text-blue-100">60-minute session</span>
                 <div className="text-3xl font-bold">$15</div>
               </div>
               
               <div className="flex items-center justify-between">
-                <span className="text-blue-100">60-minute session</span>
+                <span className="text-blue-100">90-minute session</span>
                 <div className="text-3xl font-bold">$17.50</div>
               </div>
             </div>
