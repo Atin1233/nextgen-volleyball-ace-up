@@ -66,6 +66,13 @@ export const ContactSection = () => {
               <div className="text-3xl">📍</div>
               <h3 className="font-poppins font-bold text-2xl">Location</h3>
             </div>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/d9869db1-42ab-4f55-a538-78c45d233b97.png" 
+                alt="Beach Volleyball Courts at Veterans Park"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+            </div>
             <p className="text-blue-100 mb-2">Veterans Park - Beach Volleyball Courts</p>
             <p className="text-blue-100">61 Avenue K, Monroe Township, NJ 08831</p>
             <div className="mt-4 text-sm text-blue-200">
