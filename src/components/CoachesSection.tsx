@@ -15,8 +15,12 @@ export const CoachesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Coach Manav */}
           <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
-            <div className="w-32 h-32 bg-volleyball-orange rounded-full mx-auto mb-6 flex items-center justify-center text-6xl">
-              🏐
+            <div className="w-32 h-32 bg-volleyball-orange rounded-full mx-auto mb-6 overflow-hidden">
+              <img 
+                src="/lovable-uploads/089690e0-5c3a-41f4-88ff-927846d7c7b5.png" 
+                alt="Coach Manav"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Coach Manav</h3>
             <div className="text-volleyball-orange font-semibold mb-4">5+ years playing experience</div>
@@ -33,8 +37,12 @@ export const CoachesSection = () => {
 
           {/* Coach Akul */}
           <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
-            <div className="w-32 h-32 bg-volleyball-blue rounded-full mx-auto mb-6 flex items-center justify-center text-6xl">
-              🏐
+            <div className="w-32 h-32 bg-volleyball-blue rounded-full mx-auto mb-6 overflow-hidden">
+              <img 
+                src="/lovable-uploads/3d4c260d-0363-400d-b6d7-c09e87af22a9.png" 
+                alt="Coach Akul"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Coach Akul</h3>
             <div className="text-volleyball-blue font-semibold mb-4">4+ years playing experience</div>
