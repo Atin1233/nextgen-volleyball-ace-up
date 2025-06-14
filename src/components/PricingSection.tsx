@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 
 export const PricingSection = () => {
@@ -118,7 +117,7 @@ export const PricingSection = () => {
           <div className="bg-gray-50 rounded-lg p-6 max-w-2xl mx-auto">
             <h4 className="font-semibold text-volleyball-navy mb-3">💳 Payment Options</h4>
             <p className="text-gray-600">
-              We accept cash, Venmo, Cash App, and Zelle for your convenience.
+              We accept cash, Apple Pay, Venmo, Cash App, and Zelle for your convenience.
             </p>
           </div>
         </div>
