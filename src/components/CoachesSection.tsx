@@ -39,7 +39,7 @@ export const CoachesSection = () => {
           <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
             <div className="w-32 h-32 bg-volleyball-blue rounded-full mx-auto mb-6 overflow-hidden">
               <img 
-                src="/lovable-uploads/3d4c260d-0363400d-b6d7-c09e87af22a9.png" 
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
                 alt="Coach Akul"
                 className="w-full h-full object-cover"
               />
