@@ -18,7 +18,7 @@ export const Footer = () => {
           
           <div className="border-t border-white/20 pt-6">
             <p className="text-blue-200 text-sm">
-              © 2024 NextGen Volleyball. All rights reserved. | Monroe Township, NJ
+              © 2025 NextGen Volleyball. All rights reserved. | Monroe Township, NJ
             </p>
           </div>
         </div>
