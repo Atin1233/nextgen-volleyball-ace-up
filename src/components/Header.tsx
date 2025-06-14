@@ -20,8 +20,12 @@ export const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-volleyball-orange rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">🏐</span>
+            <div className="w-8 h-8 rounded-full flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/c58ece9b-c3bb-4816-bfe4-4a075c297856.png" 
+                alt="NextGen Volleyball Logo"
+                className="w-8 h-8 object-contain"
+              />
             </div>
             <span className="font-poppins font-bold text-xl text-volleyball-navy">
               NextGen Volleyball
