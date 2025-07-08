@@ -1,9 +1,10 @@
+
 export const TestimonialsSection = () => {
   const testimonials = [
     {
       text: "Both of your boys were amazing! So much patience and very kind! The kids enjoyed it most likely we will come tomorrow too!",
       author: "Sonia K. Saini", 
-      role: "Parent of 10-year-old",
+      role: "Parent of 7 & 9-year-old siblings",
       rating: 5
     },
     {
