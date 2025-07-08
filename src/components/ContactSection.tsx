@@ -86,14 +86,19 @@ export const ContactSection = () => {
               <div className="text-3xl">🕒</div>
               <h3 className="font-poppins font-bold text-2xl">Hours</h3>
             </div>
-            <div className="space-y-2 text-blue-100">
-              <div className="flex justify-between">
-                <span>Weekdays:</span>
-                <span>6:00 AM - 7:00 PM</span>
+            <div className="space-y-3 text-blue-100 mb-6">
+              <div className="font-semibold text-volleyball-orange mb-2">Group Sessions:</div>
+              <div className="text-sm space-y-1">
+                <div>Tuesdays: 8:00 AM - 9:30 AM</div>
+                <div>Fridays: 8:00 AM - 9:30 AM</div>
+                <div>Saturdays: 8:00 AM - 9:30 AM</div>
+                <div>Sundays: 8:00 AM - 9:30 AM</div>
               </div>
-              <div className="flex justify-between">
-                <span>Weekends:</span>
-                <span>6:00 AM - 7:30 PM</span>
+            </div>
+            <div className="bg-white/10 rounded-lg p-4">
+              <div className="font-semibold text-volleyball-orange mb-2">Private Sessions:</div>
+              <div className="text-sm text-blue-200">
+                Flexible scheduling available to accommodate your preferred times. Contact us to arrange sessions that work best for your schedule.
               </div>
             </div>
           </div>
