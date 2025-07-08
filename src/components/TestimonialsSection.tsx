@@ -1,16 +1,15 @@
-
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "My daughter has improved so much in just a few weeks. The coaches make learning fun while being technical.",
-      author: "Sarah M.",
+      text: "Both of your boys were amazing! So much patience and very kind! The kids enjoyed it most likely we will come tomorrow too!",
+      author: "Sonia K. Saini", 
       role: "Parent of 10-year-old",
       rating: 5
     },
     {
       text: "The small group size means my son gets plenty of attention. He looks forward to volleyball every week!",
       author: "David K.",
-      role: "Parent of 12-year-old",
+      role: "Parent of 12-year-old", 
       rating: 5
     },
     {
