@@ -59,12 +59,12 @@ export const ContactSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-          {/* Location */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+          {/* Location 1 - Veterans Park */}
           <div className="bg-white/10 rounded-2xl p-8">
             <div className="flex items-center space-x-3 mb-4">
               <div className="text-3xl">📍</div>
-              <h3 className="font-poppins font-bold text-2xl">Location</h3>
+              <h3 className="font-poppins font-bold text-2xl">Location 1</h3>
             </div>
             <div className="mb-6">
               <img 
@@ -75,9 +75,23 @@ export const ContactSection = () => {
             </div>
             <p className="text-blue-100 mb-2">Veterans Park - Beach Volleyball Courts</p>
             <p className="text-blue-100">61 Avenue K, Monroe Township, NJ 08831</p>
-            <div className="mt-4 text-sm text-blue-200">
-              Beach Volleyball Courts at Veterans Park
+          </div>
+
+          {/* Location 2 - Half-Acre Park */}
+          <div className="bg-white/10 rounded-2xl p-8">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="text-3xl">📍</div>
+              <h3 className="font-poppins font-bold text-2xl">Location 2</h3>
             </div>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/c490f0a4-f373-4ae6-8549-8fb6062ee7f3.png" 
+                alt="Beach Volleyball Courts at Half-Acre Park"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+            </div>
+            <p className="text-blue-100 mb-2">Half-Acre Park - Beach Volleyball Courts</p>
+            <p className="text-blue-100">6 Potomac Ave, Monroe Township, NJ 08831</p>
           </div>
 
           {/* Hours */}
