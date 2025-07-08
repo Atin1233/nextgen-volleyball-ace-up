@@ -1,15 +1,14 @@
 
-
 export const CoachesSection = () => {
   return (
     <section id="coaches" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-poppins font-bold text-4xl text-volleyball-navy mb-4">
-            🏐 Meet Your Coaches
+            🏐 Meet Your Founders
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            High performing varsity players dedicated to developing the next generation of volleyball players
+            High performing varsity players who founded NextGen Volleyball and are dedicated to coaching the next generation of players
           </p>
         </div>
 
@@ -23,8 +22,8 @@ export const CoachesSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Coach Manav</h3>
-            <div className="text-volleyball-orange font-semibold mb-4">High performing varsity player • 5+ years playing experience</div>
+            <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Founder & Coach Manav</h3>
+            <div className="text-volleyball-orange font-semibold mb-4">Co-Founder • High performing varsity player • 5+ years playing experience</div>
             <p className="text-gray-600 leading-relaxed">
               Specializes in fundamental skill development and making volleyball fun for beginners. 
               Manav's patient approach helps young players build confidence while mastering the basics.
@@ -45,8 +44,8 @@ export const CoachesSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Coach Akul</h3>
-            <div className="text-volleyball-blue font-semibold mb-4">High performing varsity player • 4+ years playing experience</div>
+            <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Founder & Coach Akul</h3>
+            <div className="text-volleyball-blue font-semibold mb-4">Co-Founder • High performing varsity player • 4+ years playing experience</div>
             <p className="text-gray-600 leading-relaxed">
               Focuses on technique refinement and building confidence in young players. 
               Akul's technical expertise helps players develop proper form and advanced skills.
@@ -58,8 +57,13 @@ export const CoachesSection = () => {
             </div>
           </div>
         </div>
+
+        <div className="text-center mt-12">
+          <p className="text-lg text-gray-600">
+            🌟 <span className="font-semibold">We're growing!</span> More experienced coaches joining our team soon.
+          </p>
+        </div>
       </div>
     </section>
   );
 };
-
