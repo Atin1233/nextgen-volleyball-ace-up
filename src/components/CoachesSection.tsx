@@ -1,5 +1,4 @@
 
-
 import {
   Carousel,
   CarouselContent,
@@ -11,13 +10,13 @@ import {
 export const CoachesSection = () => {
   const coaches = [
     {
-      name: "Dhruv Santhosh",
+      name: "Druv Santhosh",
       image: "/lovable-uploads/2cef1ccd-157d-4bb5-92cb-86120f38d04e.png",
       description: "Dedicated coach with extensive volleyball experience, bringing technical expertise and passion to help players reach their full potential."
     },
     {
       name: "Harsha Dhavala",
-      image: "/lovable-uploads/6572e06e-97a8-4070-aedb-34dda4d001ae.png",
+      image: "/lovable-uploads/cd08bb70-7264-46da-87df-d722cbde97f6.png",
       description: "Experienced volleyball coach focused on skill development and building confidence in players of all levels."
     }
   ];
@@ -101,7 +100,11 @@ export const CoachesSection = () => {
                         <img 
                           src={coach.image}
                           alt={`Coach ${coach.name}`}
-                          className="w-full h-full object-cover object-center"
+                          className={`w-full h-full object-cover ${
+                            coach.name === "Druv Santhosh" 
+                              ? "object-center transform -translate-y-2" 
+                              : "object-center"
+                          }`}
                         />
                       </div>
                       <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">
@@ -126,4 +129,3 @@ export const CoachesSection = () => {
     </section>
   );
 };
-
