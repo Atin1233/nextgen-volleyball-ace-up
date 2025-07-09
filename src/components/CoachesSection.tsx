@@ -17,7 +17,7 @@ export const CoachesSection = () => {
     },
     {
       name: "Harsha Dhavala",
-      image: "/lovable-uploads/7189f889-9c0d-48ae-8cbe-22e53258a92d.png",
+      image: "/lovable-uploads/6572e06e-97a8-4070-aedb-34dda4d001ae.png",
       description: "Experienced volleyball coach focused on skill development and building confidence in players of all levels."
     }
   ];
