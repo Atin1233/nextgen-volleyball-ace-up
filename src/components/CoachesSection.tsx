@@ -1,4 +1,5 @@
 
+
 import {
   Carousel,
   CarouselContent,
@@ -15,7 +16,7 @@ export const CoachesSection = () => {
       description: "Dedicated coach with extensive volleyball experience, bringing technical expertise and passion to help players reach their full potential."
     },
     {
-      name: "Harsha",
+      name: "Harsha Dhavala",
       image: "/lovable-uploads/7189f889-9c0d-48ae-8cbe-22e53258a92d.png",
       description: "Experienced volleyball coach focused on skill development and building confidence in players of all levels."
     }
@@ -100,7 +101,7 @@ export const CoachesSection = () => {
                         <img 
                           src={coach.image}
                           alt={`Coach ${coach.name}`}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover object-center"
                         />
                       </div>
                       <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">
@@ -125,3 +126,4 @@ export const CoachesSection = () => {
     </section>
   );
 };
+
