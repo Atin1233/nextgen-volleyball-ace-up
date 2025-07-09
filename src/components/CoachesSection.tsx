@@ -1,5 +1,26 @@
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 export const CoachesSection = () => {
+  const coaches = [
+    {
+      name: "Dhruv Santhosh",
+      image: "/lovable-uploads/2cef1ccd-157d-4bb5-92cb-86120f38d04e.png",
+      description: "Dedicated coach with extensive volleyball experience, bringing technical expertise and passion to help players reach their full potential."
+    },
+    {
+      name: "Harsha",
+      image: "/lovable-uploads/7189f889-9c0d-48ae-8cbe-22e53258a92d.png",
+      description: "Experienced volleyball coach focused on skill development and building confidence in players of all levels."
+    }
+  ];
+
   return (
     <section id="coaches" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,10 +79,47 @@ export const CoachesSection = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-lg text-gray-600">
-            🌟 <span className="font-semibold">We're growing!</span> More experienced coaches joining our team soon.
-          </p>
+        {/* New Coaches Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h2 className="font-poppins font-bold text-3xl text-volleyball-navy mb-4">
+              Meet Our Coaches
+            </h2>
+            <p className="text-lg text-gray-600">
+              Experienced coaches joining our team to provide exceptional training
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {coaches.map((coach, index) => (
+                  <CarouselItem key={index}>
+                    <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                      <div className="w-40 h-40 bg-volleyball-green rounded-full mx-auto mb-6 overflow-hidden">
+                        <img 
+                          src={coach.image}
+                          alt={`Coach ${coach.name}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">
+                        Coach {coach.name}
+                      </h3>
+                      <div className="text-volleyball-green font-semibold mb-4">
+                        Professional Coach
+                      </div>
+                      <p className="text-gray-600 leading-relaxed">
+                        {coach.description}
+                      </p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
         </div>
       </div>
     </section>
