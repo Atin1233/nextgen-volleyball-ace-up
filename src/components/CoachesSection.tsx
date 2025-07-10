@@ -11,7 +11,7 @@ export const CoachesSection = () => {
   const coaches = [
     {
       name: "Druv Santhosh",
-      image: "/lovable-uploads/6e2beece-efaa-4405-b7c1-100540cb40a5.png",
+      image: "/lovable-uploads/f3a4bc8d-9d54-4bd4-b647-cd8d22ba33ed.png",
       description: "Dedicated coach with extensive volleyball experience, bringing technical expertise and passion to help players reach their full potential."
     },
     {
@@ -100,7 +100,11 @@ export const CoachesSection = () => {
                         <img 
                           src={coach.image}
                           alt={`Coach ${coach.name}`}
-                          className="w-full h-full object-cover object-center"
+                          className={`w-full h-full object-cover ${
+                            coach.name === "Druv Santhosh" 
+                              ? "object-top scale-110" 
+                              : "object-center"
+                          }`}
                         />
                       </div>
                       <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">
