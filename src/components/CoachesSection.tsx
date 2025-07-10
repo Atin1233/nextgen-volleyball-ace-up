@@ -18,6 +18,11 @@ export const CoachesSection = () => {
       name: "Harsha Dhavala",
       image: "/lovable-uploads/cd08bb70-7264-46da-87df-d722cbde97f6.png",
       description: "Experienced volleyball coach focused on skill development and building confidence in players of all levels."
+    },
+    {
+      name: "Raghav Rao",
+      image: "/lovable-uploads/b1e98274-99e1-44a5-bde4-878c291a76be.png",
+      description: "Passionate volleyball coach committed to developing fundamental skills and fostering teamwork in young athletes."
     }
   ];
 
@@ -103,6 +108,8 @@ export const CoachesSection = () => {
                           className={`w-full h-full object-cover ${
                             coach.name === "Druv Santhosh" 
                               ? "object-top scale-110" 
+                              : coach.name === "Raghav Rao"
+                              ? "object-center scale-105"
                               : "object-center"
                           }`}
                         />
