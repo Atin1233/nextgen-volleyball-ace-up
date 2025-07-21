@@ -1,4 +1,11 @@
 import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const GallerySection = () => {
   const galleryImages = [
@@ -41,44 +48,78 @@ export const GallerySection = () => {
     {
       src: "/lovable-uploads/fafd53c3-3364-46c8-8cef-21a80c807175.png",
       alt: "Large group of volleyball students and coaches on beach court"
+    },
+    {
+      src: "/lovable-uploads/ac857ec5-63f1-45ad-86fc-a90d7495f110.png",
+      alt: "Beach volleyball training session with advanced techniques"
+    },
+    {
+      src: "/lovable-uploads/1aba6872-9f02-4e02-b96b-eaaa4243a218.png",
+      alt: "Volleyball coaching with focus on court positioning"
+    },
+    {
+      src: "/lovable-uploads/a5cd64da-cc06-4b92-83dc-c126f7093d95.png",
+      alt: "Training session with emphasis on volleyball fundamentals"
+    },
+    {
+      src: "/lovable-uploads/86e84788-691b-448a-8e2d-92b4859c38b0.png",
+      alt: "Beach volleyball practice with multiple court activities"
+    },
+    {
+      src: "/lovable-uploads/e6f42815-d4f6-4a9f-a5ed-017603f43853.png",
+      alt: "Volleyball team training with net practice"
+    },
+    {
+      src: "/lovable-uploads/124478de-643d-4a42-969f-02a8cba78875.png",
+      alt: "Action shot of volleyball gameplay during training"
     }
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-gray-50">
+    <section id="gallery" className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-poppins font-bold text-4xl text-volleyball-navy mb-4">
+        <div className="text-center mb-8">
+          <h2 className="font-poppins font-bold text-3xl text-volleyball-navy mb-3">
             📸 Past Sessions Gallery
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             See our coaches and students in action during training sessions
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {galleryImages.map((image, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
-              <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-6xl mx-auto"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {galleryImages.map((image, index) => (
+              <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
+                  <CardContent className="p-0">
+                    <div className="aspect-square overflow-hidden">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-2" />
+          <CarouselNext className="right-2" />
+        </Carousel>
 
-        <div className="text-center mt-12">
-          <div className="bg-white rounded-lg p-6 max-w-2xl mx-auto shadow-sm">
-            <h4 className="font-semibold text-volleyball-navy mb-3">🏐 Join Our Training Sessions</h4>
-            <p className="text-gray-600">
-              Experience the same high-quality coaching and fun atmosphere shown in these photos. 
-              Book your session today and become part of our volleyball community!
+        <div className="text-center mt-8">
+          <div className="bg-white rounded-lg p-4 max-w-xl mx-auto shadow-sm">
+            <p className="text-gray-600 text-sm">
+              🏐 Experience the same high-quality coaching shown in these photos. Book your session today!
             </p>
           </div>
         </div>
