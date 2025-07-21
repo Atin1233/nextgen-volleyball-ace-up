@@ -28,7 +28,7 @@ export const PricingSection = () => {
             </div>
             
             <h3 className="font-poppins font-bold text-2xl mb-2">Group Clinics</h3>
-            <p className="text-orange-100 mb-6">Weekly 90-minute group sessions</p>
+            <p className="text-orange-100 mb-6">Daily 90-minute group sessions</p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center justify-between">
