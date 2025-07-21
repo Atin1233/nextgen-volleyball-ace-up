@@ -6,6 +6,7 @@ import { AboutSection } from '@/components/AboutSection';
 import { CoachesSection } from '@/components/CoachesSection';
 import { ProgramsSection } from '@/components/ProgramsSection';
 import { PricingSection } from '@/components/PricingSection';
+import { GallerySection } from '@/components/GallerySection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { BookingSection } from '@/components/BookingSection';
 import { ContactSection } from '@/components/ContactSection';
@@ -21,6 +22,7 @@ const Index = () => {
       <CoachesSection />
       <ProgramsSection />
       <PricingSection />
+      <GallerySection />
       <TestimonialsSection />
       <BookingSection />
       <ContactSection />

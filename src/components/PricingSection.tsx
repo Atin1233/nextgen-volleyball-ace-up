@@ -80,12 +80,12 @@ export const PricingSection = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center justify-between">
                 <span className="text-blue-100">60-minute session</span>
-                <div className="text-3xl font-bold">$15</div>
+                <div className="text-3xl font-bold">$20</div>
               </div>
               
               <div className="flex items-center justify-between">
                 <span className="text-blue-100">90-minute session</span>
-                <div className="text-3xl font-bold">$17.50</div>
+                <div className="text-3xl font-bold">$25</div>
               </div>
             </div>
 
