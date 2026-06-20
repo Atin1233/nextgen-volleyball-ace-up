@@ -71,7 +71,7 @@ export const CoachesSection = () => {
               />
             </div>
             <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Founder & Coach Akul</h3>
-            <div className="text-volleyball-blue font-semibold mb-4">Co-Founder • High performing varsity player • 4+ years playing experience</div>
+            <div className="text-volleyball-blue font-semibold mb-4">Co-Founder • High performing varsity player • 5+ years playing experience</div>
             <p className="text-gray-600 leading-relaxed">
               Focuses on technique refinement and building confidence in young players. 
               Akul's technical expertise helps players develop proper form and advanced skills.
