@@ -104,11 +104,11 @@ export const ProgramsSection = () => {
 
             <div className="space-y-4 mb-6">
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                <span className="text-gray-600">60-minute session</span>
-                <span className="font-semibold text-volleyball-navy">$20</span>
+                <span className="text-gray-600">Duration</span>
+                <span className="font-semibold text-volleyball-navy">60 minutes</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                <span className="text-gray-600">90-minute session</span>
+                <span className="text-gray-600">Price</span>
                 <span className="font-semibold text-volleyball-navy">$25</span>
               </div>
             </div>
