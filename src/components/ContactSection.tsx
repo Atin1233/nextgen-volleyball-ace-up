@@ -16,12 +16,12 @@ export const ContactSection = () => {
           {/* Coach Contacts */}
           <div className="bg-white/10 rounded-2xl p-6 text-center">
             <div className="text-3xl mb-4">📱</div>
-            <h3 className="font-semibold text-lg mb-3">Manav's Phone</h3>
+            <h3 className="font-semibold text-lg mb-3">Ansh's Phone</h3>
             <a 
-              href="tel:(732) 620-6531" 
+              href="tel:(732) 731-9574" 
               className="text-volleyball-orange hover:text-volleyball-orange-light transition-colors text-lg font-semibold"
             >
-              (732) 620-6531
+              (732) 731-9574
             </a>
           </div>
 
@@ -38,12 +38,12 @@ export const ContactSection = () => {
 
           <div className="bg-white/10 rounded-2xl p-6 text-center">
             <div className="text-3xl mb-4">✉️</div>
-            <h3 className="font-semibold text-lg mb-3">Manav's Email</h3>
+            <h3 className="font-semibold text-lg mb-3">Ansh's Email</h3>
             <a 
-              href="mailto:manavpatel0416@gmail.com" 
+              href="mailto:2009anshpatel@gmail.com" 
               className="text-volleyball-orange hover:text-volleyball-orange-light transition-colors font-semibold break-all"
             >
-              manavpatel0416@gmail.com
+              2009anshpatel@gmail.com
             </a>
           </div>
 
