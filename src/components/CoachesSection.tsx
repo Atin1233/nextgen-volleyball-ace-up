@@ -44,20 +44,20 @@ export const CoachesSection = () => {
             <div className="w-32 h-32 bg-volleyball-orange rounded-full mx-auto mb-6 overflow-hidden">
               <img 
                 src="/lovable-uploads/089690e0-5c3a-41f4-88ff-927846d7c7b5.png" 
-                alt="Coach Manav"
+                alt="Coach Ansh"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Founder & Coach Manav</h3>
-            <div className="text-volleyball-orange font-semibold mb-4">Co-Founder • High performing varsity player • 5+ years playing experience</div>
+            <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Owner & Coach Ansh</h3>
+            <div className="text-volleyball-orange font-semibold mb-4">Owner • High performing varsity player • 5+ years playing experience</div>
             <p className="text-gray-600 leading-relaxed">
               Specializes in fundamental skill development and making volleyball fun for beginners. 
-              Manav's patient approach helps young players build confidence while mastering the basics.
+              Ansh's patient approach helps young players build confidence while mastering the basics.
             </p>
             <div className="mt-6 p-4 bg-white rounded-lg">
               <div className="text-sm text-gray-500 mb-1">Contact</div>
-              <div className="text-volleyball-navy font-semibold">manavpatel0416@gmail.com</div>
-              <div className="text-volleyball-navy font-semibold">(732) 620-6531</div>
+              <div className="text-volleyball-navy font-semibold">2009anshpatel@gmail.com</div>
+              <div className="text-volleyball-navy font-semibold">(732) 731-9574</div>
             </div>
           </div>
 
