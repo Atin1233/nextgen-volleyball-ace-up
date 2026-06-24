@@ -45,7 +45,8 @@ export const CoachesSection = () => {
               <img 
                 src="/lovable-uploads/ansh-photo.jpg"
                 alt="Coach Ansh"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "center 25%" }}
               />
             </div>
             <h3 className="font-poppins font-bold text-2xl text-volleyball-navy mb-2">Owner & Coach Ansh</h3>
